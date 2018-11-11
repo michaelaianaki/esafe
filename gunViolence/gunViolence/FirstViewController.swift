@@ -32,7 +32,7 @@ class FirstViewController: UIViewController {
     }
 
     @IBAction func enterTapped(_ sender: Any) {
-                
+        
         //Implementing URLSession
         let urlString = "http://172.20.10.4:5000/"
         guard let url = URL(string: urlString) else { return }
@@ -46,6 +46,11 @@ class FirstViewController: UIViewController {
             
             }.resume()
     
+        nameField.text = "";
+        infoField.text = "";
+        dateField.text = "";
+        concernField.text = "";
+        locationField.text = "";
 //        var request = URLRequest(url: URL(string: "172.20.10.2:5000")!)
 //        request.httpMethod = "GET"
 //        let session = URLSession.shared

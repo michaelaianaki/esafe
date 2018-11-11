@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C02370AA21981B7300656866 /* sofiapro-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C02370A921981B7300656866 /* sofiapro-light.otf */; };
+		C02370AC219847B000656866 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02370AB219847B000656866 /* MapViewController.swift */; };
+		C02370B221984BEC00656866 /* EmergencyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02370B121984BEC00656866 /* EmergencyViewController.swift */; };
 		C06052C92197F4D600D74629 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06052C82197F4D600D74629 /* AppDelegate.swift */; };
 		C06052CB2197F4D600D74629 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06052CA2197F4D600D74629 /* FirstViewController.swift */; };
 		C06052CD2197F4D600D74629 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06052CC2197F4D600D74629 /* SecondViewController.swift */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C02370A921981B7300656866 /* sofiapro-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "sofiapro-light.otf"; sourceTree = "<group>"; };
+		C02370AB219847B000656866 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		C02370B121984BEC00656866 /* EmergencyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergencyViewController.swift; sourceTree = "<group>"; };
 		C06052C52197F4D600D74629 /* gunViolence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gunViolence.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06052C82197F4D600D74629 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C06052CA2197F4D600D74629 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -76,10 +82,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C02370A821981AF500656866 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C02370A921981B7300656866 /* sofiapro-light.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		C06052BC2197F4D600D74629 = {
 			isa = PBXGroup;
 			children = (
 				C06052C72197F4D600D74629 /* gunViolence */,
+				C02370A821981AF500656866 /* fonts */,
 				C06052DE2197F4DB00D74629 /* gunViolenceTests */,
 				C06052E92197F4DB00D74629 /* gunViolenceUITests */,
 				C06052C62197F4D600D74629 /* Products */,
@@ -99,6 +114,7 @@
 		C06052C72197F4D600D74629 /* gunViolence */ = {
 			isa = PBXGroup;
 			children = (
+				C02370AB219847B000656866 /* MapViewController.swift */,
 				C06052C82197F4D600D74629 /* AppDelegate.swift */,
 				C06052CA2197F4D600D74629 /* FirstViewController.swift */,
 				C06052CC2197F4D600D74629 /* SecondViewController.swift */,
@@ -106,6 +122,7 @@
 				C06052D12197F4DA00D74629 /* Assets.xcassets */,
 				C06052D32197F4DA00D74629 /* LaunchScreen.storyboard */,
 				C06052D62197F4DA00D74629 /* Info.plist */,
+				C02370B121984BEC00656866 /* EmergencyViewController.swift */,
 			);
 			path = gunViolence;
 			sourceTree = "<group>";
@@ -233,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C06052D52197F4DA00D74629 /* LaunchScreen.storyboard in Resources */,
+				C02370AA21981B7300656866 /* sofiapro-light.otf in Resources */,
 				C06052D22197F4DA00D74629 /* Assets.xcassets in Resources */,
 				C06052D02197F4D600D74629 /* Main.storyboard in Resources */,
 			);
@@ -262,6 +280,8 @@
 				C06052CD2197F4D600D74629 /* SecondViewController.swift in Sources */,
 				C06052C92197F4D600D74629 /* AppDelegate.swift in Sources */,
 				C06052CB2197F4D600D74629 /* FirstViewController.swift in Sources */,
+				C02370AC219847B000656866 /* MapViewController.swift in Sources */,
+				C02370B221984BEC00656866 /* EmergencyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

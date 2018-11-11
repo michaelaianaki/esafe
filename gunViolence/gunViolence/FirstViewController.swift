@@ -32,13 +32,33 @@ class FirstViewController: UIViewController {
     }
 
     @IBAction func enterTapped(_ sender: Any) {
-        var request = URLRequest(url: URL(string: "172.20.10.2:5000")!)
-        request.httpMethod = "GET"
-        let session = URLSession.shared
+                
+        //Implementing URLSession
+        let urlString = "http://172.20.10.4:5000/"
+        guard let url = URL(string: urlString) else { return }
         
-        session.dataTask(with: request) {data, response, err in
-            print("Entered the completionHandler")
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            if error != nil {
+                print(error!.localizedDescription)
+            }
+            
+            guard let data = data else { return }
+            
             }.resume()
+    
+//        var request = URLRequest(url: URL(string: "172.20.10.2:5000")!)
+//        request.httpMethod = "GET"
+//        let session = URLSession.shared
+//
+//        session.dataTask(with: request) {data, response, err in
+//            print("Entered the completionHandler")
+//            }.resume()
+        
+//
+//        let url = URL(string: "http://172.20.10.2:5000")!
+//        let urlSession = URLSession.shared
+//        let getRequest = URLRequest(url: url)
+
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     }
